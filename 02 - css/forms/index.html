@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <!-- Fungerar som en line break men obs efter att vi lärt oss layout-tekniker kommer vi inte behöva använda den här -->
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <br>
+        <button>Log in</button>
+    </form>
+
+    <!-- Skapa ett form för anmälan till en gruppresa -->
+    <!-- Datum, antal personer, namn på ansvarig, färg på matchande t-shirts -->
+    <h1>Anmälan till gruppresa</h1>
+    <form>
+        <label for="name">Namn för ansvarig</label>
+        <input required type="text" id="name">
+        <br>
+        <label for="date">Datum för resan</label>
+        <input type="date" id="date">
+        <br>
+        <label for="color">Välj färg på era t-shirts</label>
+        <input type="color" id="color">
+        <br>
+        <label for="number">Antal personer</label>
+        <input type="number" id="number" min="0" max="10">
+        <button>Skicka</button>
+    </form>
+
+</body>
+</html>

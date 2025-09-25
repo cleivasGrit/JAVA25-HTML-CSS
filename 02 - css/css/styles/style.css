@@ -1,0 +1,55 @@
+html{
+    font-size: 10pt;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+li{
+    /* Alla li-element blir feta */
+    font-weight: bold;
+}
+li{
+    /* Det här skriver över regeln ovan */
+    font-weight: lighter;
+}
+
+.purple{
+    /* Alla element med klassen purple får denna färg oavsett vilken typ av element det är */
+    /* color: violet; */
+    color: #ee82ee;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+#cars{
+    background-color: skyblue;
+}
+#cars:hover{
+    background-color: coral;
+}
+
+h1{
+    /* 4 gånger root elementet dvs 4*10pt */
+    font-size: 4rem;
+    /* Eftersom en klass-selektor har högre specifitet än en element-selektor apliceras inte färgen blå */
+    color: blue;
+}
+
+img{
+    /* width: 100px; */
+    /* Bredden är hälften av parent elementets bredd, dvs body elementet */
+    width: 50%;
+}
+
+a{
+   font-size: 2rem;
+    color: green;
+    text-decoration: none;
+}
+a:visited{
+    color: lime;
+}
+a:hover{
+    text-decoration: underline;
+}
