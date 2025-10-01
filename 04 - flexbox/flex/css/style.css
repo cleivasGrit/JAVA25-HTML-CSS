@@ -1,0 +1,33 @@
+.flex-container{
+    display: flex;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+    flex-flow: row wrap;
+    /* flex-flow: column wrap; */
+    /* Testa olika värden från förslagen för att se skillnaden */
+    justify-content: space-around;
+    
+    
+    /* Testa olika värden från förslagen för att se skillnaden */
+    align-items: center;
+
+
+    border: 1px solid black;
+    height: 100vh;
+}
+
+
+.dog-card{
+    max-width: 200px;
+    max-height: 300px;
+    /* flex-basis: 100px; */
+    /* margin: 1rem; */
+
+    border: 2px solid lightgray;
+}
+
+.dog-card img{
+    width: 100%
+}

@@ -1,0 +1,30 @@
+div{
+    border: 3px solid purple;
+    margin: 5px;
+}
+
+.yellow{
+    background-color: lightyellow;
+    display: flex;
+    height: 200px;
+}
+
+.violet{
+    background-color: violet;
+    /* Här btyder detta width eftersom the flex container har direction row */
+    flex-basis: 50%;
+}
+
+.green{
+    background-color: rgb(43, 198, 177);
+    /* Här btyder detta height eftersom the flex container har direction column */
+    flex-basis: 100%;
+
+}
+
+#second-flex{
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-around; */
+}

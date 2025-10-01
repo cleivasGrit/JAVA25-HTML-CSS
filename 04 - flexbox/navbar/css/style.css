@@ -1,0 +1,36 @@
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    max-width: 100px;
+}
+
+
+/* Navbaren */
+ul{
+    display: flex;
+    list-style: none;
+
+    /* Gab används framför allt till CSS grid */
+    /* gap: 10px; */
+
+    /* border: 1px solid black; */
+    min-width: 400px;
+    justify-content: space-between;
+}
+li{
+    /* margin: .5rem; */
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #949494;
+}
+
+a:hover{
+    color: black;
+}
