@@ -1,0 +1,47 @@
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container > div{
+    border: 3px solid white;
+    height: 50px;
+}
+
+.red > div{
+    background-color: #ff7575;
+    flex-basis: 100%
+}
+.green > div{
+    background-color: #b1f586;
+    flex-basis: 100%
+}
+.yellow > div{
+    background-color:#fff475;
+    flex-basis: 50%
+}
+
+@media screen and (min-width: 400px){
+    .red > .width-50{
+        flex-basis: 50%;
+    }
+
+    .yellow > .width-25{
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .red > div, .red > .width-50{
+        flex-basis: 33.33%
+    }
+
+    .green > div{
+        flex-basis: 50%;
+    }
+
+    .yellow > div, .yellow > .width-25{
+        flex-basis: 16.66%;
+    }
+}
